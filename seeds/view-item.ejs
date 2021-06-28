@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/header.ejs') %>
+
+<body>
+
+    <%- include('./partials/navbar.ejs') %>
+    
+    <div class="container-fluid">
+
+        <h1>Item Details</h1>
+        <h3>Item Id</h3>
+        <p><%= item._id %></p>
+
+        <h3>Item Name</h3><br>
+        <p><%= item.name %></p>
+
+        <h3>Item Age</h3><br>
+        <p><%= item.Age %></p>
+
+    </div>
+
+</body>
+
+</html>

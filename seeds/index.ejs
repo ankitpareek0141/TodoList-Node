@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/header.ejs') %>
+
+<body>
+
+    <%- include('./partials/navbar.ejs') %>
+
+    <div class="container">
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h4>Tasks</h4>
+            </li>
+            <% if(items.length > 0) { %>
+            <% items.forEach(item => { %>
+            <li class="collection-item" itemId="<%= item._id %>" onclick="deleteItem(this)">
+                <div><%= item.name  %> <%= item.Age %><a href="/view-item/<%= item._id %>" class="secondary-content"><i
+                            class="material-icons">delete</i>
+                        <i class="material-icons">edit</i></a></div>
+            </li>
+            <% }); %>
+            <% }else{ %>
+            <li class="collection-item">
+                <div>No items in the list</div>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+    <script src="./assets/js/connect.js"></script>
+</body>
+
+<a href="/view-item/"></a>
+
+</html>
