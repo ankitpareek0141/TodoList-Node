@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const DB_URL = 'mongodb+srv://turbocoder:Password123@todocluster.6er3w.mongodb.net/Todo-List?retryWrites=true&w=majority';
+const DB_URL = 'mongodb+srv://yudiz:yudiz@cluster0.mjydfiu.mongodb.net/?retryWrites=true&w=majority';
 const app = express();
 const PORT = 3000;
 const routes = require('./routes/user-routes.js');
